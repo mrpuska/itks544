@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://itks544.onrender.com/ontologies/my-ontology#"
-     xml:base="https://itks544.onrender.com/ontologies/my-ontology"
+<rdf:RDF xmlns="https://itks544.onrender.com/ontologies/Juha.owl#"
+     xml:base="https://itks544.onrender.com/ontologies/Juha.owl"
      xmlns:dbo="https://dbpedia.org/page/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Juha="https://itks544.onrender.com/ontologies/Juha.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:my-ontology="https://itks544.onrender.com/ontologies/my-ontology#"
      xmlns:untitled-ontology-2="http://www.semanticweb.org/juha/ontologies/2022/8/untitled-ontology-2#">
-    <owl:Ontology rdf:about="https://itks544.onrender.com/ontologies/my-ontology">
+    <owl:Ontology rdf:about="https://itks544.onrender.com/ontologies/Juha.owl">
         <owl:imports rdf:resource="https://dbpedia.org/ontology/"/>
     </owl:Ontology>
     
@@ -30,6 +30,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juha/ontologies/2022/8/untitled-ontology-2#hasBirthday">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -38,29 +39,39 @@
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://itks544.onrender.com/ontologies/my-ontology#Human"/>
+        <rdfs:domain rdf:resource="https://itks544.onrender.com/ontologies/Juha.owl#Human"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </rdf:Description>
     
 
 
-    <!-- https://itks544.onrender.com/ontologies/my-ontology#hasFirstName -->
+    <!-- https://itks544.onrender.com/ontologies/Juha.owl#hasFirstName -->
 
-    <owl:DatatypeProperty rdf:about="https://itks544.onrender.com/ontologies/my-ontology#hasFirstName">
+    <owl:DatatypeProperty rdf:about="https://itks544.onrender.com/ontologies/Juha.owl#hasFirstName">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://itks544.onrender.com/ontologies/my-ontology#Human"/>
+        <rdfs:domain rdf:resource="https://itks544.onrender.com/ontologies/Juha.owl#Human"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://itks544.onrender.com/ontologies/my-ontology#hasLastName -->
+    <!-- https://itks544.onrender.com/ontologies/Juha.owl#hasLastName -->
 
-    <owl:DatatypeProperty rdf:about="https://itks544.onrender.com/ontologies/my-ontology#hasLastName">
+    <owl:DatatypeProperty rdf:about="https://itks544.onrender.com/ontologies/Juha.owl#hasLastName">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://itks544.onrender.com/ontologies/my-ontology#Human"/>
+        <rdfs:domain rdf:resource="https://itks544.onrender.com/ontologies/Juha.owl#Human"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://itks544.onrender.com/ontologies/Juha.owl#hasTelephoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://itks544.onrender.com/ontologies/Juha.owl#hasTelephoneNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://itks544.onrender.com/ontologies/Juha.owl#Human"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -77,16 +88,16 @@
     
 
 
-    <!-- https://itks544.onrender.com/ontologies/my-ontology#Human -->
+    <!-- https://itks544.onrender.com/ontologies/Juha.owl#Human -->
 
-    <owl:Class rdf:about="https://itks544.onrender.com/ontologies/my-ontology#Human"/>
+    <owl:Class rdf:about="https://itks544.onrender.com/ontologies/Juha.owl#Human"/>
     
 
 
-    <!-- https://itks544.onrender.com/ontologies/my-ontology#Male -->
+    <!-- https://itks544.onrender.com/ontologies/Juha.owl#Male -->
 
-    <owl:Class rdf:about="https://itks544.onrender.com/ontologies/my-ontology#Male">
-        <rdfs:subClassOf rdf:resource="https://itks544.onrender.com/ontologies/my-ontology#Human"/>
+    <owl:Class rdf:about="https://itks544.onrender.com/ontologies/Juha.owl#Male">
+        <rdfs:subClassOf rdf:resource="https://itks544.onrender.com/ontologies/Juha.owl#Human"/>
     </owl:Class>
     
 
@@ -102,13 +113,14 @@
     
 
 
-    <!-- https://itks544.onrender.com/ontologies/my-ontology#Juha -->
+    <!-- https://itks544.onrender.com/ontologies/Juha.owl#Juha -->
 
-    <owl:NamedIndividual rdf:about="https://itks544.onrender.com/ontologies/my-ontology#Juha">
-        <rdf:type rdf:resource="https://itks544.onrender.com/ontologies/my-ontology#Male"/>
+    <owl:NamedIndividual rdf:about="https://itks544.onrender.com/ontologies/Juha.owl#Juha">
+        <rdf:type rdf:resource="https://itks544.onrender.com/ontologies/Juha.owl#Male"/>
         <untitled-ontology-2:hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1994-02-24T14:00:00Z</untitled-ontology-2:hasBirthday>
         <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juha</hasFirstName>
         <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Puskala</hasLastName>
+        <hasTelephoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+35844055294</hasTelephoneNumber>
     </owl:NamedIndividual>
 </rdf:RDF>
 
